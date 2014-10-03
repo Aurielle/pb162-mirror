@@ -12,9 +12,8 @@ import cz.muni.fi.pb162.project.geometry.Vertex2D;
  *
  */
 
-public class DrawExtra01 extends Draw {
-   
-/* 
+public class DrawExtra02 extends Draw {
+/*
     @Override
     public boolean paintTriangle(Triangle triangle) {
         boolean ret = super.paintTriangle(triangle);
@@ -27,27 +26,15 @@ public class DrawExtra01 extends Draw {
     }
     
     public static void main(String[] args) {
-        Vertex2D v1 = new Vertex2D();
-        Vertex2D v2 = new Vertex2D();
-        Vertex2D v3 = new Vertex2D();
-        v1.setX(-100);
-        v1.setY( 0);
-        v2.setX( 0);
-        v2.setY( 100);
-        v3.setX( 100);
-        v3.setY(-100);
+        Vertex2D v1 = new Vertex2D(-100,-100);
+        Vertex2D v2 = new Vertex2D(0,100);
+        Vertex2D v3 = new Vertex2D(100,-100);
         
-        Triangle tri = new Triangle();
-        tri.setVertexA(v1);
-        tri.setVertexB(v2);
-        tri.setVertexC(v3);
+        Triangle tri = new Triangle(v1, v2, v3, 5);
         
-        System.out.println(tri);
-        
-        Draw demo = new DrawExtra01();
-        tri.divide();
-        demo.paintTriangle(tri);
-        demo.startPainting();
+        Draw canvas = new DrawExtra02();
+        canvas.paintTriangle(tri);
+        canvas.startPainting();
     }
 */
 }
