@@ -232,6 +232,7 @@ public class Draw extends JFrame {
         canvas.paintTriangle(tri);
         canvas.paintCircle(cir);
         canvas.startPainting();
+
     }
 }
 
