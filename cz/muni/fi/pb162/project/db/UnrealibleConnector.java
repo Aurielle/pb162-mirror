@@ -1,4 +1,4 @@
-package lesson06.db;
+package cz.muni.fi.pb162.project.db;
 
 import java.io.IOException;
 import java.net.NoRouteToHostException;
